@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% include head.html %}
+
+<body>
+    {% include nav.html %}
+
+    <div class="container">
+        <center>
+            {{ content }}
+
+            <style>
+            	Table {
+            		text-align: center;
+            	}
+
+            	Td {
+            		font-family: "Times New Roman", Times, serif;
+            		font-size: 24px;
+            		font-style: italic;
+            		width: 600px;
+            		height:250px;
+            		text-align: left;
+            		vertical-align: middle;
+            	}
+            </style>
+        </center>
+    </div>
+
+    {% include footer.html %} {% include scripts.html %}
+</body>
+</html>
