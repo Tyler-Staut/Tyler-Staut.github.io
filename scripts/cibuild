@@ -17,7 +17,7 @@ bundle exec jekyll build
 cd _site
 
 # Make sure we have the updated .travis.yml file so tests won't run on master.
-cp ../Tyler-Staut.github.io/.travis.yml .
+cp ../.travis.yml .
 git config user.email ${GH_EMAIL}
 git config user.name "Tyler Staut"
 
