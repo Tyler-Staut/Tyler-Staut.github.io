@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# enable error reporting to the console
+set -e
+
+# cleanup "_site"
+rm -rf _site
+mkdir _site
+
+# clone remote repo to "_site"
+git clone https://${GH_TOKEN}@github.com/Tyler-Staut/Tyler-Staut.github.io.git
+
+# build with Jekyll into "_site"
+bundle exec jekyll build
+
+# push
+cd _site
+
+# Make sure we have the updated .travis.yml file so tests won't run on master.
+cp ../savaslabs.github.io/.travis.yml .
+git config user.email ${GH_EMAIL}
+git config user.name "Tyler Staut"
+
+git add --all
+git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
+git push --force origin master

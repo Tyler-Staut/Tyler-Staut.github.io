@@ -4,11 +4,11 @@ rvm:
 - 2.3.3
 
 before_script:
-- chmod +x ./cibuild
+- chmod +x ./scripts/cibuild
 
-install: gem install jekyll html-proofer
-script: jekyll build && htmlproofer ./_site
-script: "./script/cibuild"
+script: "./scripts/cibuild"
+# install: gem install jekyll html-proofer
+# script: jekyll build && htmlproofer ./_site
 
 branches:
   only:
@@ -18,7 +18,6 @@ branches:
 env:
   global:
   - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
-  - secure: CU0BClsgGIFW6/Tyg+3FX9xlB9UnZDL5dK4BAnyaOmMWBcdnpMaErx8G1oNGYSrJSIfNWPKadmc9tasnXkicV+OKj4NfXJXH1pGDPX5CuLAfpxxDMAegKYkDhO1HFl3cyIEBUKwh2CDNxP9TxYHdnt/PAlkR6qJfefuonRjOLMi0jJclDHijAdmtGRH3qNiVS5/loSNV0XGOQT6pZQwWTuDsobu4q8HJMnr8NRE4k/Ivs7VGoTVGY5A/laKqh5dmIcnwKbS2WFNUWz1ziTrSpzyUq42bgdqZnsL6hDfrUTos1j8RB+MtaVIDSMqZfohlerzuq79nEb+I2cKR9qvJQVm5UdJ11iBU70xrirNXcWP9yFO2zS7i5CAp2m70oWHCz8B7cvHrAriNMg/a3QyLcjsShBhyEIg9ziOQZiL+RDTSTw+yjmjiJ2fA31tYJgb4AWyb3Q/ASmdmqNbF74hX8zWXs3cEjSKsaMpXwd/MZ9GQ7X6A9ucbz2BpudbQ020WWq9kjqd9mCCncG7AOChEwciScSFoKqRVeXbZdK3OkxNncPGIYOPybfzCsCBtUnWIaY4wjYwl0Krdduxmhu2qGMLs5iWF+vh82MkQRILwgOJfpQL1HwqQENsmohc5BexCY/nQ32zgY8MGfIbY7cSbaFGHnWndJR2VI19xrhHk55A=
   - secure: mmKG1D0MZmJ40i/5eZOcKwbRVP8rE2sDz13ezRk+ZMYK/7R98uinA2/pCmd64is1sj2Abvt0SUyn8T2vuEfUIsQSrO7msIf6Cr/xf6y22VUSoY2IJoLBg9+Ss/eb4sTRSuWovuSGrDu5wojnHAMIRftPAWJPZOqFTm2km9wq8x4NkCMCP1QPESvosy5oOXr8g0TmWWVs2dNkrRRgRVsLyg952VlGLmWBTvFZBN0nL95/rLg+WqvpymUvJXrfEWTI4sKo2NniU/iGa+jPTTLvQUfNDF2aTCeF/g11XwxQr5u3woUXDcRR2zqztrgaaCY1lywMVy/kExf6YFcf7doIxis8yjd5OMAXKSqQHaYTv4NHo6FZXu0lb4jQSdLia85Juiu6IhMSl+2c9icdJUeKj2gQwzPz+R57b8/PEl4S2f1n+CYGEyJK8OC9WtAGZw3wKklmjUEA7jNjY+2qFOlFaRXJ9kbx09L3CfLDFhY5aotCI8HWB5oUWQDPugPI5tEX4Bxu0iBfTEIbA3qbf8GhNMv/j1jb+Wj9AVdIDWhw8kbrMAfIgUlKViEWbyRTQxOH+4StrmtBj2cS6Jc3wE2jeeQ9fSjS/cD0/CuLK+hODWo+QUiJ8B0QlOckWBTJ2w2lrKYPRtdw0NAkKwCyj52yxrhmnRBexB6crbmA2yul1W4=
 
 sudo: false

@@ -17,10 +17,10 @@ bundle exec jekyll build
 cd _site
 
 # Make sure we have the updated .travis.yml file so tests won't run on master.
-cp ../tyler-staut.github.io/.travis.yml .
+cp ../Tyler-Staut.github.io/.travis.yml .
 git config user.email ${GH_EMAIL}
 git config user.name "Tyler Staut"
 
 git add --all
 git commit -a -m "Travis #$TRAVIS_BUILD_NUMBER"
-git push --force origin gh-pages
+git push --force origin master
