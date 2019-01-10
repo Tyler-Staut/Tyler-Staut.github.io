@@ -1,88 +1,66 @@
+# Site
+repository: tyler-staut/tyler-staut.github.io
+# favicon: images/favicon.ico
+
+# Personal info
+name: Tyler Staut
+title: Full Time Student - Developer - Student Assistant
+email: Tyler.R.Staut@gmail.com
+website:
+
+# Social links
+# twitter_username:
+github_username: tyler-staut
+# dribbble_username:
+facebook_username: tyler.mainframe
+# flickr_username:
+# instagram_username:
+linkedin_username: tyler-staut-361736121
+# pinterest_username:
+# youtube_username:
+# googleplus_username:
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hello, My name is Tyler Staut. I'm currently a student at Columbus State University, working towards a bachelor's degree in Computer Science. Over the course of my education, I've gained relative proficiency with multiple programming languages. I've also gained a working knowledge of computer networks as well as computer and network security. My topics of particular interest include computer networks and security, and software/hardware development.
+
+
+# Projects Section
+projects_title: Projects
+
+# Experience Section
+experience_title: Experience
+
+# Education Section
+educaton_title: Education
+
+# Education Section
+skills_title: Professional Copentiencies
+
+# Education Section
+location_title: Location
+
+
+# More Section
+# more_title: A Little More About Me
+more_content: | # this will include new lines to allow paragraphs
+  Alongside my interests in networks, software engineering, and Mainframes, some of my other interests and hobbies are:
+   - Compentitions (Mathematics and Cyber Security Related)
+   - Gaming (Currently play Overwatch)
+   - Board Games
+   - Electrical Engineering
+
+# Footer
+footer_show_references: true
+
 # Build settings
-# Gems
+remote_theme: sproogen/modern-resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
 plugins:
-- jekyll-paginate
-- jekyll-feed
-
-# Site Settings
-locale                   : "en-US"
-title                    : "Tyler Staut"
-title_separator          : "-"
-name                     : "Tyler Staut"
-description              : ""
-url                      : https://Tyler-Staut.github.io
-baseurl                  : # The subpath of your site, e.g. "/blog"
-repository               : https://github.com/Tyler-Staut/Tyler-Staut.github.io/
-
-
-
-# Default keywords (used if no keywords are specified on a page basis)
-keywords:
-
-# Short description of your site
-desc: Tyler Staut's Portfolio
-
-# --- Navigation bar options --- #
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-# avatar: "/img/avatar.jpg"
-
-# List of links in the navigation bar
-nav-links:
-  Home: ""
-  About Me: "aboutme"
-  # Skills: "skills"
-  # Research: "research"
-  # Interests: "interests"
-  Clubs: "clubs"
-  Fold with Me: "foldathome"
-  Train an AI: "ai"
-
-# --- Footer options --- #
-
-# If the values are empty, they are ignored
-profile:
-  name: Tyler Staut
-  email: Staut_Tyler@ColumbusState.edu
-  facebook: # your-fb-id
-  github: Tyler-Staut
-  twitter:
-  linkedin: tyler-staut-361736121 # your-linkedin-id
-  stackoverflow: # your-stackoverflow-id
-
-# To display link in the footer section
-pretty-url: "https://github.com/Tyler-Staut"
-
-# --- Misc --- #
-
-# Your Disqus profile (shortname) settings
-# disqus: "Your-Disqus-Id"
-
-# Google Analytics Settings
-google_analytics: "UA-48101562"
-
-# Set these options as you need (For more information, check Jekyll's site)
-# timezone: "Europe/Berlin"
-markdown: kramdown
-#highlighter: rouge
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
-paginate: 5
-
-
-created-by: Tyler Staut
-creator-url: https://github.com/Tyler-Staut
-
-# Exclude these files from production site
-exclude:
-  - Rakefile
-  - Gemfile
-  - Gemfile.lock
-  - changelog.md
-  - "*.Rmd"
-  - vendor
-  - .travis.yml
-
-github: [metadata]
+ - jekyll-seo-tag

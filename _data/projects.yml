@@ -1,0 +1,11 @@
+- name: Portfolio
+  link: github.com/tyler-staut
+  github: tyler-staut/tyler-staut.github.io
+  description: | # this will include new lines to allow paragraphs
+    I started this portfolio website as a way of learning continuous integration and how to make websites.
+
+- name: Tribble Bot
+  link: github.com/tyler-staut
+  github: tyler-staut/tribble-bot]
+  description: | # this will include new lines to allow paragraphs
+    

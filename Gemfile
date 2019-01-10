@@ -1,11 +1,9 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'github-pages', '>=104', group: :jekyll_plugins #, group: :jekyll_plugins
-gem 'wdm', '~> 0.1.0' if Gem.win_platform?
+gem "github-pages", group: :jekyll_plugins
 
-gem 'jekyll-archives'
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'jekyll-assets', '~> 2.2.7', :group => :jekyll_plugins
-gem 'font-awesome-sass', '~> 4.6.2'
-gem 'autoprefixer-rails', '~> 6.3.6.2'
-gem 'html-proofer', '3.0.6'
+# Performance-booster for watching directories on Windows
+gem "wdm", "~> 0.1.0" if Gem.win_platform?
